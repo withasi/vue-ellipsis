@@ -2,6 +2,8 @@
 
 [![Version](https://img.shields.io/npm/v/vue-ellipsis.svg)](https://www.npmjs.com/package/vue-ellipsis) [![License](https://img.shields.io/npm/l/vue-ellipsis.svg)](https://www.npmjs.com/package/vue-ellipsis) [![Downloads](https://img.shields.io/npm/dt/vue-ellipsis.svg)](https://www.npmjs.com/package/vue-ellipsis)
 
+fork from https://github.com/jypblue/vue-ellipsis
+
 a multiline sentence ellipsis component of vue2.js
 
 ## Features
@@ -12,16 +14,16 @@ a multiline sentence ellipsis component of vue2.js
 
 ### NPM
 ```
-$ npm install vue-ellipsis --save
+$ npm install vue-ellipsis2 --save
 ```
 ### Yarn
 ```
-$ yarn add vue-ellipsis
+$ yarn add vue-ellipsis2
 ```
 
 ### Bower
 ```
-$ bower install vue-ellipsis
+$ bower install vue-ellipsis2
 ```
 
 ## Ellipsis Component Attributes
@@ -41,7 +43,7 @@ $ bower install vue-ellipsis
 ```
 Import:
 import Vue from 'vue'
-import VueEllipsis from 'vue-ellipsis'
+import VueEllipsis from 'vue-ellipsis2'
 Vue.use(VueEllipsis)
 
 Component Use:
@@ -61,11 +63,6 @@ handleClick: click callback function
 
 ```
 
-## Update Log
-
-- version 1.0.x => add basic functions: substring multiline sentence and add '...'.
-
-- version 1.1.x => add user-defined ending string; add user-defined ending html; add click callback function.
 
 
 ## License
