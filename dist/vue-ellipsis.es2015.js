@@ -1,7 +1,7 @@
 
   /* !
 
-  * vue-ellipsis v1.0.2
+  * vue-ellipsis v1.1.0
 
   * https://github.com/jypblue/vue-ellipsis
 
@@ -97,7 +97,7 @@ function plugin(Vue) {
           var stNodeLen = stNode.innerHTML.trimRight().length;
           var stNodeDelStr = stNode.innerHTML.substring(stNodeLen - endLen, stNodeLen);
           var extraLen = stNodeDelStr.match(/\s+/g).length;
-          var newhtml = stNode.innerHTML.substring(0, stNodeLen - endLen - extraLen) + this.endChar + this.endHtml;
+          var newhtml = stNode.innerHTML.substring(0, stNodeLen - 1 - extraLen) + this.endChar + this.endHtml;
           stNode.innerHTML = newhtml;
         }
       },

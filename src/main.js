@@ -79,11 +79,13 @@
           }
 
           const endStr = !!this.endHtml ? this.endHtml.replace(/<[^>]+>/g,"") : ''
-          const endLen = endStr.length + this.endChar.length
+          let endLen = endStr.length + this.endChar.length
           // 计算被截掉部分的空格
           const stNodeLen = stNode.innerHTML.trimRight().length;
           const stNodeDelStr = stNode.innerHTML.substring(stNodeLen - endLen, stNodeLen);
-          const extraLen = stNodeDelStr.match(/\s+/g).length;
+          const match = stNodeDelStr.match(/\s+/g);
+          const extraLen = match && match.length ? stNodeDelStr.match(/\s+/g).length : 0;
+          endLen = this.endChar=='...' ? 1 : endLen;
           const newhtml = stNode.innerHTML.substring(0, stNodeLen - endLen - extraLen) + this.endChar + this.endHtml
           stNode.innerHTML = newhtml
         }
