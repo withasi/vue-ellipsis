@@ -1,7 +1,7 @@
 
   /* !
 
-  * vue-ellipsis v1.1.1
+  * vue-ellipsis v0.0.1
 
   * https://github.com/jypblue/vue-ellipsis
 
