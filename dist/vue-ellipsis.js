@@ -102,8 +102,10 @@ function plugin(Vue) {
           // 计算被截掉部分的空格
           var stNodeLen = stNode.innerHTML.trimRight().length;
           var stNodeDelStr = stNode.innerHTML.substring(stNodeLen - endLen, stNodeLen);
-          var extraLen = stNodeDelStr.match(/\s+/g).length;
-          var newhtml = stNode.innerHTML.substring(0, stNodeLen - 1 - extraLen) + this.endChar + this.endHtml;
+          var match = stNodeDelStr.match(/\s+/g);
+          var extraLen = match && match.length ? stNodeDelStr.match(/\s+/g).length : 0;
+          endLen = this.endChar == '...' ? 1 : endLen;
+          var newhtml = stNode.innerHTML.substring(0, stNodeLen - endLen - extraLen) + this.endChar + this.endHtml;
           stNode.innerHTML = newhtml;
         }
       },
