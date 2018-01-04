@@ -1,6 +1,6 @@
 {
-  "name": "vue-ellipsis",
-  "version": "1.1.1",
+  "name": "vue-ellipsis2",
+  "version": "0.0.1",
   "description": "a substr component of vue2.js",
   "main": "dist/vue-ellipsis.common.js",
   "jsnext:main": "dist/vue-ellipsis.es2015.js",
@@ -9,7 +9,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/jypblue/vue-ellipsis.git"
+    "url": "git+https://github.com/withasi/vue-ellipsis.git"
   },
   "keywords": [
     "vue2",
@@ -18,9 +18,9 @@
   "author": "zx.wang",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/jypblue/vue-ellipsis/issues"
+    "url": "https://github.com/withasi/vue-ellipsis/issues"
   },
-  "homepage": "https://github.com/jypblue/vue-ellipsis#readme",
+  "homepage": "https://github.com/withasi/vue-ellipsis#readme",
   "devDependencies": {
     "babel-core": "^6.24.0",
     "babel-loader": "^6.4.1",
