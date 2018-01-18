@@ -1,5 +1,6 @@
 # vue-ellipsis
 
+
 [![Version](https://img.shields.io/npm/v/vue-ellipsis2.svg)](https://www.npmjs.com/package/vue-ellipsis2) [![License](https://img.shields.io/npm/l/vue-ellipsis2.svg)](https://www.npmjs.com/package/vue-ellipsis2) [![Downloads](https://img.shields.io/npm/dt/vue-ellipsis2.svg)](https://www.npmjs.com/package/vue-ellipsis2)
 
 fork from https://github.com/jypblue/vue-ellipsis
